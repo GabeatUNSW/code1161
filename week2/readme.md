@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+I learend the really basics of python. Still not sure how to work out the function thing. I learend that if you used the "input" thing, you can input things like number and words from the output screen. I used this for my "if" exercise. 

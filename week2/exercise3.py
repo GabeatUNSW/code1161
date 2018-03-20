@@ -9,10 +9,32 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    pass
+    def is_odd(a_number):
+        if a_number % 2 == 0:
+            return False
+        else:
+            return True
+#print (is_odd(2))
 
+def is_even(num1):
+    if num1 % 2 == 0:
+      return True
+    else:
+      return False
+#print (is_even(4))
 
 def fix_it(moves=True, should_move=True):
+    if moves == shoud_move:
+        return "no problem"
+    elif move and not shoud_move:
+        return "Duct tape"
+    elif not move and not should_move:
+        return "No Problem"
+    elif not move and should_move:
+        return "WD-40"
+    else:
+        return "Something is not right"
+
     """Decide what to do.
 
     Using the engineering flowchart for the rules, return the apropriate
@@ -23,28 +45,53 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+"""answer = input ("Does it move? Answer in 'Yes','No' or 'Sort of'")
 
+if answer == "Yes":
+  return ("No Problem")
+if answer == "No":  
+  return ("You should use WD-40.")
+if answer == "Sort of":
+  return ("I'll give you duct tape")
+"""
 
-def loops_1a():
+def loops_1a(output):
     """Make 10 stars.
 
     Using a for loop
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
+    our_list = []
+    
+    for x in range(10):
+        our_list.append('*')
+    
+    return our_list
+    # print (loops_1a("'*'"))
 
-
-def star_map():
+#def star_map(string):
     """Use a map to make stars and bangs.
-
-    Using a map, return a list of 10 items, each one a string with exacly
+     Using a map, return a list of 10 items, each one a string with exacly
     one star in it if the index is odd and exactly one exclamation mark
     if it's even. Reuse the is odd function that you've already written.
     E.g.: ["!", "*", "!", "*", "!", "*", "!", "*", "!", "*"]
     """
-    pass
+def star_or_bang(a_nunmber):
+    if is_odd(a_number):
+        return "*"
+    else:
+        return "!"
+    result = map(star_or_bangs, range(10))
+    print (result)
+    return result
+
+    """x = len(string)
+    if x % 2 == 0:
+        return "!"
+    else:
+        return "*"
+    """    
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -55,11 +102,17 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
+    my_return_list = []
+for counter in range (number_of_items):
+    my_return_list.append(symbol)
+return my_return_list
 
-
+'''
 def loops_2():
-    """Make a big square starfield.
+
+
+"""
+Make a big square starfield.
 
     return a list of 10 items, each one a list of 10 items,
     each one of those, a string with exacly one star in it.
@@ -75,8 +128,18 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
-    """
-    pass
+"""
+
+my_return_list = []
+
+for counter in range (10):
+  my_temporary_list = []
+  for counter2 in range (10):
+    my_temporary_list.append('*')
+  my_return_list.append(my_temporary_list)    
+      
+print (my_return_list)   
+
 
 
 def loops_3():
@@ -100,7 +163,7 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+
 
 
 def loops_4():
@@ -235,3 +298,4 @@ if __name__ == "__main__":
     lp(loops_5(), "loops_5")
     lp(loops_6(), "loops_6")
     lp(loops_7(), "loops_7")
+"""

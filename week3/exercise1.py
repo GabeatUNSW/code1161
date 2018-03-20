@@ -8,65 +8,124 @@ from __future__ import print_function
 
 
 def loop_ranger(start, stop=None, step=1):
-    """Return a list of numbers between start and stop in steps of step.
+  new_list = []
+  for i in range(start,stop,step):
+    new_list.append(i)
+  return new_list  
+"""Return a list of numbers between start and stop in steps of step.
 
     Do this using any method apart from just using range()
-    """
-    pass
+"""
+
 
 
 def lone_ranger(start, stop, step):
-    """Duplicate the functionality of range.
+  return range(start, stop, step)
+"""Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
-    """
-    pass
+"""
+  
 
 
-def two_step_ranger(start, stop):
+def two_step_ranger():
+    return range(start , stop, 2)
     """Make a range that steps by 2.
 
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    pass
-
 
 def gene_krupa_range(start, stop, even_step, odd_step):
-    """Make a range that has two step sizes.
+  genes_beats = []
+  lates = start
+  beat = 0
+  while lates < stop:
+    genes_beats.append(latest)
+    if beat % 2 == 0:
+      lates += even_step
+    else:
+      latest = odd_step
+    beat += 1
+  return genes_beats  
+
+"""Make a range that has two step sizes.
 
     make a list that instead of having evenly spaced steps
     has odd steps be one size and even steps be another.
-    """
-    pass
-
+"""
 
 def stubborn_asker(low, high):
-    """Ask for a number between low and high until actually given one.
+  message = "Enter a number between {low}, and {high}:".format(low=low,high=high)
+  while True:
+    imput_number = int(raw_input(message))
+    if low < input_number < high:
+      print("{} looks good.").format(input_number))
+      return input_number
+    else:
+      print("{input} isnt't between {low}, and {high}").format(input=input_number,low=low,high=high))
+
+"""Ask for a number between low and high until actually given one.
 
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
-    """
-    pass
+"""
 
+
+'''def stubborn_asker(input_num):
+  input_num = int(input('enter a number:'))
+  if input_num == "5":
+    return ('you got the number!')
+  else:
+    return ('keep trying')
+#print (stubborn_asker(1))
+'''
 
 def not_number_rejector(message):
-    """Ask for a number repeatedly until actually given one.
+  while True 
+    try: 
+      input_number = int(raw_input(message))
+      print "{}looks good.".format(input_number))
+      return input_number
+    except Exception as e:
+      print ("try again ({})").format(e))
+
+"""Ask for a number repeatedly until actually given one.
 
     Ask for a number, and if the response is actually NOT a number (e.g. "cow",
     "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
-    """
-    pass
+"""
+"""def not_number_rejector(message):
+  if message > -100000000:
+    return ("You have a number!")
+  else:
+    return ("That's a string, put a number")
+#print (not_number_rejector(-100000001))
+  try:
+    message = int(input("Type a number:"))
+    print ("Thats a number")
+  except ValueError:
+    print("This is not a number.")
+"""
 
 
-def super_asker(low, high):
-    """Robust asking function.
+#def super_asker(low, high):
+"""Robust asking function.
 
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
-    """
-    pass
+"""
+def super_asker(message):
+  message = int(input('enter a number:'))
+  if message == 5:
+    return ('YES, 5 is the number!')
+  elif message > -100000000:
+    return ("You have a number!")  
+  else:
+    return ('keep trying')
+
+    
 
 
 if __name__ == "__main__":
@@ -85,6 +144,6 @@ if __name__ == "__main__":
     print("\nstubborn_asker")
     stubborn_asker(30, 45)
     print("\nnot_number_rejector")
-    not_number_rejector()
+    not_number_rejector("Give me a number: ")
     print("\nsuper_asker")
     super_asker(33, 42)
