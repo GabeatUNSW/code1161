@@ -21,13 +21,13 @@ print (add_5(1))
 
     #comment#
 
-def adder(a_number, a_number):
+def adder(a_number, x_number):
 
     """Add two numbers.
 
     Same as above, but with any two numbers.        
     """
-sumNum = a_number + a_number
+    sumNum = a_number + x_number
     return sumNum
 print(adder(100,1))
     
@@ -41,7 +41,7 @@ def shout(a_string):
     or in any of the million places that google will give you.
     "python make a string uppercase" is a good starting search query.
     """
-  return a_string.upper()
+    return a_string.upper()
 print (shout("hi"))
 
 
@@ -53,7 +53,7 @@ def really_shout(a_string):
     Look up how to 'concatinate' strings to make this happen.
     """
 
-  return a_string.upper() + "!"
+    return a_string.upper() + "!"
   
 print (really_shout("hi"))
 

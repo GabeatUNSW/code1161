@@ -9,12 +9,10 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    def is_odd(a_number):
-        if a_number % 2 == 0:
-            return False
-        else:
-            return True
-#print (is_odd(2))
+    if a_number % 2 == 0:
+        return False
+    else:
+        return True
 
 def is_even(num1):
     if num1 % 2 == 0:
@@ -24,13 +22,13 @@ def is_even(num1):
 #print (is_even(4))
 
 def fix_it(moves=True, should_move=True):
-    if moves == shoud_move:
+    if moves == should_move:
         return "no problem"
-    elif move and not shoud_move:
+    elif moves and not should_move:
         return "Duct tape"
-    elif not move and not should_move:
+    elif not moves and not should_move:
         return "No Problem"
-    elif not move and should_move:
+    elif not moves and should_move:
         return "WD-40"
     else:
         return "Something is not right"
@@ -78,6 +76,7 @@ def loops_1a(output):
     E.g.: ["!", "*", "!", "*", "!", "*", "!", "*", "!", "*"]
     """
 def star_or_bang(a_nunmber):
+    a_number = input("Enter a number: ")
     if is_odd(a_number):
         return "*"
     else:
@@ -103,32 +102,32 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
     my_return_list = []
-for counter in range (number_of_items):
-    my_return_list.append(symbol)
-return my_return_list
+    for counter in range (number_of_items):
+        my_return_list.append(symbol)
+    return my_return_list
 
-'''
+
 def loops_2():
 
 
-"""
-Make a big square starfield.
+    """
+    Make a big square starfield.
 
-    return a list of 10 items, each one a list of 10 items,
-    each one of those, a string with exacly one star in it.
-    E.g.: [
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-            ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
-          ]
-"""
+        return a list of 10 items, each one a list of 10 items,
+        each one of those, a string with exacly one star in it.
+        E.g.: [
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+                ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
+            ]
+    """
 
 my_return_list = []
 
@@ -298,4 +297,3 @@ if __name__ == "__main__":
     lp(loops_5(), "loops_5")
     lp(loops_6(), "loops_6")
     lp(loops_7(), "loops_7")
-"""
