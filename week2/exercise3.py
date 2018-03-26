@@ -75,8 +75,7 @@ def loops_1a(output):
     if it's even. Reuse the is odd function that you've already written.
     E.g.: ["!", "*", "!", "*", "!", "*", "!", "*", "!", "*"]
     """
-def star_or_bang(a_nunmber):
-    a_number = input("Enter a number: ")
+def star_or_bang(a_number):
     if is_odd(a_number):
         return "*"
     else:
@@ -108,8 +107,24 @@ def loops_1c(number_of_items=5, symbol="#"):
 
 
 def loops_2():
+    my_return_list = []
+
+    for counter in range (10):
+        my_temporary_list = []
+        for counter2 in range (10):
+            my_temporary_list.append('*')
+        my_return_list.append(my_temporary_list)    
+    return my_return_list
 
 
+    '''my_return_list = []
+
+    for counter in range (10):
+        my_temporary_list = []
+    for counter2 in range (10):
+        my_temporary_list.append('*')
+    return my_return_list.append(my_temporary_list)    
+    '''  
     """
     Make a big square starfield.
 
@@ -128,18 +143,6 @@ def loops_2():
                 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
             ]
     """
-
-my_return_list = []
-
-for counter in range (10):
-  my_temporary_list = []
-  for counter2 in range (10):
-    my_temporary_list.append('*')
-  my_return_list.append(my_temporary_list)    
-      
-print (my_return_list)   
-
-
 
 def loops_3():
     """Make a rising block of numbers.
@@ -184,6 +187,17 @@ def loops_4():
 
 
 def loops_5():
+    my_return_list = []
+
+    for counter in range (10):
+        my_temporary_list = []
+        for counter2 in range (5):
+            to_append ="(i"+ str(counter) + ", j" + str(counter2) + "j"
+            my_temporary_list.append(to_append)
+    
+        my_return_list.append(my_temporary_list)    
+      
+    return (my_return_list)   
     """Make the coordinates of the block.
 
     Return this:
@@ -205,9 +219,6 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
-
-
 def loops_6():
     """Make a wedge of numbers.
 
@@ -228,10 +239,23 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    
 
 
 def loops_7():
+    columns = []
+    for x in range(5):
+        rows = []
+        for y in range(9):
+            if abs(y-4) <= x:
+                rows.append('*')
+            else:
+                rows.append(' ')
+        columns.append(rows)
+
+    print(columns)
+    return columns
+
     """Make a pyramid.
 
     Return this:

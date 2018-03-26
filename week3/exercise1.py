@@ -9,7 +9,7 @@ from __future__ import print_function
 
 def loop_ranger(start, stop=None, step=1):
   new_list = []
-  for i in range(start,stop,step):
+  for i in range(start,stop,step):  
     new_list.append(i)
   return new_list  
 """Return a list of numbers between start and stop in steps of step.
@@ -29,7 +29,7 @@ def lone_ranger(start, stop, step):
 
 
 def two_step_ranger():
-    return range(start , stop, 2)
+    return range(start, stop, 2)
     """Make a range that steps by 2.
 
     Sometimes you want to hide complexity.
@@ -55,21 +55,22 @@ def gene_krupa_range(start, stop, even_step, odd_step):
     has odd steps be one size and even steps be another.
 """
 
-def stubborn_asker(low, high):
-  message = "Enter a number between {low}, and {high}:".format(low=low,high=high)
-  while True:
-    imput_number = int(raw_input(message))
-    if low < input_number < high:
-      print("{} looks good.").format(input_number))
-      return input_number
-    else:
-      print("{input} isnt't between {low}, and {high}").format(input=input_number,low=low,high=high))
 
-"""Ask for a number between low and high until actually given one.
+def stubborn_asker(low, high):
+  message = "Give me a number between {low}, and {high}: ".format(low=low, high=high)
+  
+  while True:
+    input_num = int(input(message))
+    if low < input_num < high:
+      print ("Thanks! {} looks good.".format(input_num))
+    else:
+      print ("{input} isn't between {low}, and {high}" .format(input=input_num, low=low, high=high))
+
+  """Ask for a number between low and high until actually given one.
 
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
-"""
+  """
 
 
 '''def stubborn_asker(input_num):
@@ -81,14 +82,18 @@ def stubborn_asker(low, high):
 #print (stubborn_asker(1))
 '''
 
-def not_number_rejector(message):
-  while True 
-    try: 
-      input_number = int(raw_input(message))
-      print "{}looks good.".format(input_number))
-      return input_number
-    except Exception as e:
-      print ("try again ({})").format(e))
+def not_number_rejector():
+  while True:
+    try:
+        data = int(input("Please enter a number: "))
+    except ValueError:
+        print("Sorry, plaase type a number.")
+        #better try again... Return to the start of the loop
+        continue
+    else:
+        print (data, "is a number!!")
+        break
+  return data  
 
 """Ask for a number repeatedly until actually given one.
 
