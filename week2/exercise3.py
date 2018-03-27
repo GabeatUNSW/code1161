@@ -1,7 +1,5 @@
 # -*- coding: UTF-8 -*-
 """Modify each function until the tests pass."""
-from __future__ import division
-from __future__ import print_function
 
 
 def is_odd(a_number):
@@ -35,8 +33,8 @@ def fix_it(moves=True, should_move=True):
 
     """Decide what to do.
 
-    Using the engineering flowchart for the rules, return the apropriate
-    response to the input parameters.
+    Using the engineering flowchart (in week2 folder engineeringFlowchart.png)
+    for the rules, return the apropriate response to the input parameters.
     Use conditional statements: if, else, elif etc.
     This function should return either:
     "WD-40"
@@ -60,6 +58,7 @@ def loops_1a(output):
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
+<<<<<<< HEAD
     our_list = []
     
     for x in range(10):
@@ -90,6 +89,10 @@ def star_or_bang(a_number):
     else:
         return "*"
     """    
+=======
+    pass
+
+>>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -173,6 +176,8 @@ def loops_4():
 
     Return this:
     [
+      ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+      ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -313,7 +318,6 @@ if __name__ == "__main__":
     print(fix_it(False, True), "fix_it")
     print(fix_it(False, False), "fix_it")
     lp(loops_1a(), "loops_1a")
-    lp(star_map(), "star_map")
     lp(loops_1c(4, "×°×"), "loops_1c")
     lp(loops_2(), "loops_2")
     lp(loops_3(), "loops_3")

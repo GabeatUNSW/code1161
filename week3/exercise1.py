@@ -3,8 +3,8 @@
 
 Modify each function until the tests pass.
 """
-from __future__ import division
-from __future__ import print_function
+
+
 
 
 def loop_ranger(start, stop=None, step=1):
@@ -36,6 +36,7 @@ def two_step_ranger():
     Make a range function that always has a step size of 2
     """
 
+<<<<<<< HEAD
 def gene_krupa_range(start, stop, even_step, odd_step):
   genes_beats = []
   lates = start
@@ -56,6 +57,8 @@ def gene_krupa_range(start, stop, even_step, odd_step):
 """
 
 
+=======
+>>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
 def stubborn_asker(low, high):
   message = "Give me a number between {low}, and {high}: ".format(low=low, high=high)
   
@@ -139,16 +142,18 @@ if __name__ == "__main__":
     # Add to these tests, give them arguments etc. to make sure that your
     # code is robust to the situations that you'll see in action.
     # NOTE: because some of these take user input you can't run them from
-    # inside Atom, you need to run them from the terminal. E.g.:
-    # ben@um:~/projects/git/code1161base$ python week3/exercise1.py
+    
 
     print("\nloop_ranger", loop_ranger(1, 10, 2))
     print("\nlone_ranger", lone_ranger(1, 10, 3))
     print("\ntwo_step_ranger", two_step_ranger(1, 10))
-    print("\ngene_krupa_range", gene_krupa_range(1, 20, 2, 5))
     print("\nstubborn_asker")
     stubborn_asker(30, 45)
     print("\nnot_number_rejector")
+<<<<<<< HEAD
     not_number_rejector("Give me a number: ")
+=======
+    not_number_rejector("Enter a number: ")
+>>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
     print("\nsuper_asker")
     super_asker(33, 42)
