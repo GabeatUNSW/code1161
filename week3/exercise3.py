@@ -10,8 +10,8 @@ import random
 
 
 def advancedGuessingGame():
-  print("\nwelcome to the guessing game!")
-  print("A number between 0 and _ ?")
+    print("\nwelcome to the guessing game!")
+    print("A number between 0 and _ ?")
     upperBound = int(raw_input("Enter an upper bound: "))
     print("OK then, a number between 0 and {} ?".format(upperBound))
     upperBound = int(upperBound)
