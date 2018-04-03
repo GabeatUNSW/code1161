@@ -36,7 +36,6 @@ def two_step_ranger():
     Make a range function that always has a step size of 2
     """
 
-<<<<<<< HEAD
 def gene_krupa_range(start, stop, even_step, odd_step):
   genes_beats = []
   lates = start
@@ -57,8 +56,6 @@ def gene_krupa_range(start, stop, even_step, odd_step):
 """
 
 
-=======
->>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
 def stubborn_asker(low, high):
   message = "Give me a number between {low}, and {high}: ".format(low=low, high=high)
   
@@ -150,10 +147,6 @@ if __name__ == "__main__":
     print("\nstubborn_asker")
     stubborn_asker(30, 45)
     print("\nnot_number_rejector")
-<<<<<<< HEAD
     not_number_rejector("Give me a number: ")
-=======
-    not_number_rejector("Enter a number: ")
->>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
     print("\nsuper_asker")
     super_asker(33, 42)

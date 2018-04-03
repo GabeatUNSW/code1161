@@ -6,10 +6,6 @@ TODO: execute that line and write what actually happened next to it.
 
 See example for first print statement
 """
-<<<<<<< HEAD
-print  ("hello! Let's get started with this file to pass the linter to make it to show no linter errors.")
-print(1+1,"is smaller than",7*0.5,"is",(1+1)<(7*0.5),", which is a relief!")
-=======
 import platform
 
 # I think this will print "hello! Let's get started" by calling the print function.
@@ -37,4 +33,3 @@ def usefulFunction():
     print(platform.uname())
 
 usefulFunction()
->>>>>>> 54705da028649df1326ec70bc41b0484469a2b54

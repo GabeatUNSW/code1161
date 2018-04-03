@@ -11,26 +11,35 @@ import random
 
 def advancedGuessingGame():
     print("\nwelcome to the guessing game!")
-    print("A number between 0 and _ ?")
-    upperBound = int(raw_input("Enter an upper bound: "))
-    print("OK then, a number between 0 and {} ?".format(upperBound))
-    upperBound = int(upperBound)
+    print("A number between _ and 100 ?")
+    lowerBound = int(input("Enter an lower bound: "))
+    print("OK then, a number between {} and 100 ?".format(lowerBound))
 
-    actualNumber = random.randint(0, upperBound)
+    actualNumber = random.randint(lowerBound, 100)
 
     guessed = False
 
     while not guessed:
-        guessedNumber = int(raw_input("guess a number: "))
+        guessedNumber = int(input("guess a number: "))
         print("you guessed {},".format(guessedNumber),)
         if guessedNumber == actualNumber:
             print("you got it!! It was {}".format(actualNumber))
             guessed = True
+        elif guessedNumber == str:
+            print("That's not a number")
+        elif guessedNumber < lowerBound:
+            print("That's lower than {}".format(lowerBound))
+        elif guessedNumber > 100:
+            print("That's bigger than 100")
         elif guessedNumber < actualNumber:
             print("too small, try again ")
+        #elif ValueError:
+        #    print("That's an error")
         else:
             print("too big, try again   ")
     return "You got it!"
+
+
     """Play a guessing game with a user.
 
     The exercise here is to rewrite the exampleGuessingGame() function
@@ -49,7 +58,6 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
-    return "You got it!"
 
 
 if __name__ == "__main__":

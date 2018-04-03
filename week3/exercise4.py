@@ -7,6 +7,7 @@ import math
 
 
 def binary_search(low, high, actual_number):
+  
     """Do a binary search.
 
     This is going to be your first 'algorithm' in the usual sense of the word!

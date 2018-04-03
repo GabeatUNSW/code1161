@@ -52,13 +52,6 @@ if answer == "Sort of":
 """
 
 def loops_1a(output):
-    """Make 10 stars.
-
-    Using a for loop
-    return a list of 10 items, each one a string with exacly one star in it.
-    E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
-    """
-<<<<<<< HEAD
     our_list = []
     
     for x in range(10):
@@ -66,6 +59,13 @@ def loops_1a(output):
     
     return our_list
     # print (loops_1a("'*'"))
+    
+    """Make 10 stars.
+
+    Using a for loop
+    return a list of 10 items, each one a string with exacly one star in it.
+    E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
+    """
 
 #def star_map(string):
     """Use a map to make stars and bangs.
@@ -89,10 +89,6 @@ def star_or_bang(a_number):
     else:
         return "*"
     """    
-=======
-    pass
-
->>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
 
 
 def loops_1c(number_of_items=5, symbol="#"):
