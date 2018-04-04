@@ -15,19 +15,16 @@ def add_5(a_number):
     except expressed in python, not english
     """
     return a_number + 5
-print (add_5(1))
 
     #comment#
 
-def adder(a_number, x_number):
+def adder(a_number, b_number):
 
     """Add two numbers.
 
     Same as above, but with any two numbers.        
     """
-    sumNum = a_number + x_number
-    return sumNum
-print(adder(100,1))
+    return a_number + b_number
     
 
 def shout(a_string):
@@ -40,7 +37,6 @@ def shout(a_string):
     "python make a string uppercase" is a good starting search query.
     """
     return a_string.upper()
-print (shout("hi"))
 
 
 def really_shout(a_string):
@@ -52,8 +48,6 @@ def really_shout(a_string):
     """
 
     return a_string.upper() + "!"
-  
-print (really_shout("hi"))
 
 def shout_with_a_number(a_string, a_number):
     """Return a string in uppercase with a space and a_number concatentated.
@@ -63,7 +57,8 @@ def shout_with_a_number(a_string, a_number):
 
     HINT: Lookup how to cast a_number to a string or lookup how to use f-strings in python
     """
-    pass
+
+    return a_string.upper(), a_number
 
 
 def minitest(f, args, expected):

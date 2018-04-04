@@ -28,32 +28,17 @@ def lone_ranger(start, stop, step):
   
 
 
-def two_step_ranger():
-    return range(start, stop, 2)
+def two_step_ranger(start, stop, step=2):
+    new_list = []
+    for i in range(start,stop,step):  
+      new_list.append(i)
+    return new_list  
     """Make a range that steps by 2.
 
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
 
-def gene_krupa_range(start, stop, even_step, odd_step):
-  genes_beats = []
-  lates = start
-  beat = 0
-  while lates < stop:
-    genes_beats.append(latest)
-    if beat % 2 == 0:
-      lates += even_step
-    else:
-      latest = odd_step
-    beat += 1
-  return genes_beats  
-
-"""Make a range that has two step sizes.
-
-    make a list that instead of having evenly spaced steps
-    has odd steps be one size and even steps be another.
-"""
 
 
 def stubborn_asker(low, high):
@@ -65,22 +50,13 @@ def stubborn_asker(low, high):
       print ("Thanks! {} looks good.".format(input_num))
     else:
       print ("{input} isn't between {low}, and {high}" .format(input=input_num, low=low, high=high))
-
+  return
   """Ask for a number between low and high until actually given one.
 
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
   """
 
-
-'''def stubborn_asker(input_num):
-  input_num = int(input('enter a number:'))
-  if input_num == "5":
-    return ('you got the number!')
-  else:
-    return ('keep trying')
-#print (stubborn_asker(1))
-'''
 
 def not_number_rejector():
   while True:

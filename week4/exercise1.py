@@ -18,7 +18,21 @@ if LOCAL != CWD:
 
 
 
+print ("data")
+
+
 def get_some_details():
+
+    json_data = open(LOCAL + "/lazyduck.json").read()
+
+    data = json.loads(json_data)
+
+
+    return {"lastName":       None,
+            "password":       None,
+            "postcodePlusID": None
+            }          
+   
     """Parse some JSON.
 
     In lazyduck.json is a description of a person from https://randomuser.me/
@@ -34,16 +48,7 @@ def get_some_details():
          dictionary, you'll need integer indeces for lists, and named keys for
          dictionaries.
     """
-    json_data = open(LOCAL + "/lazyduck.json").read()
-
-    data = json.loads(json_data)
-    return {"lastName":       None,
-            "password":       None,
-            "postcodePlusID": None
-            }
-
-
-
+   
 def wordy_pyramid():
     """Make a pyramid out of real words.
 
