@@ -26,11 +26,14 @@ def get_some_details():
     json_data = open(LOCAL + "/lazyduck.json").read()
 
     data = json.loads(json_data)
+    path = data["results"][0]
+    postcode = path["location"]["postcode"]
+    ID = path["id"]["value"]
 
 
-    return {"lastName":       None,
-            "password":       None,
-            "postcodePlusID": None
+    return {"lastName":       path["name"]["last"],
+            "password":       path["login"]["password"],
+            "postcodePlusID": int(postcode) + int(ID)
             }          
    
     """Parse some JSON.
@@ -84,8 +87,19 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    pass
-
+    baseURL = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=10&maxLength=10&limit=1"
+    pyramid_list = []
+    for i in range(3, 21, 2):
+        url = baseURL.format(i)
+        r = requests.get(url)
+        message = r.json()[0]['word']
+        pyramid_list.appened(message)
+    for i in range(20, 3, -2):
+        url = baseURL.format(str(i))
+        r = request.get(url)
+        message = r.json()[0]['word']
+        pyramid_list.append(message)
+    return pyramid_list
 
 def wunderground():
     """Find the weather station for Sydney.
@@ -127,7 +141,7 @@ def diarist():
     TIP: remember to commit 'lasers.pew' and push it to your repo, otherwise
          the test will have nothing to look at.
     """
-    pass
+    facts = open("week4Trispokedvetiles(laser).gcode","r").read()
 
 
 if __name__ == "__main__":

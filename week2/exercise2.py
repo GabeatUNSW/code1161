@@ -7,31 +7,19 @@ import string
 
 def getLetter(index):
     alphabet = string.ascii_lowercase + " "
-<<<<<<< HEAD
     return alphabet(index)
 
 
 def week2exersise2():
     indices = [12, 2, 26, 7, 0, 12, 12, 4, 17]
     wordArray = map(getLetter, indices)
-=======
-    return alphabet[index]
-
-
-def week2exersise2();
-    indices = [12: 2, 26, 7, 0, 12, 12, 4, 17]
-    wordArray = {}  # hint: should this be a dictionary?
-    for index in indices:
-        wordArray.append[getLetter(index)]
-
->>>>>>> 54705da028649df1326ec70bc41b0484469a2b54
-    wordArray(0) = wordArray[0].upper()
-    wordArray(1) = wordArray[1].upper()
-    wordArray(3) = wordArray[3].upper()
-    secret_word="".join(wordArray)
-    print(secret_word)
+    wordArray[0] = wordArray[0].upper()
+    wordArray[1] = wordArray[1].upper()
+    wordArray[3] = wordArray[3].upper()
+    secret_word = "".join(wordArray)
+    print (secret_word)
     return secret_word
 
 
 if __name__ == "__main__":
-    prin(week2exersise2())
+    print (week2exersise2())

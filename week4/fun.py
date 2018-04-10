@@ -1,9 +1,10 @@
-import json
-config = json.loads(open("lazyduck.json").read())
+def loops_3():
 
-print (type (config))
-print (config['results'])
+    final_list = []
 
-#last name
-#password
-#and the number you get when you add the postcode to the id-value.
+    for x in range(10):
+        list_number = []
+        for y in range(10):
+            list_number.append('1')
+        final_list.append(list_number)
+    return final_list

@@ -41,24 +41,15 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-"""answer = input ("Does it move? Answer in 'Yes','No' or 'Sort of'")
 
-if answer == "Yes":
-  return ("No Problem")
-if answer == "No":  
-  return ("You should use WD-40.")
-if answer == "Sort of":
-  return ("I'll give you duct tape")
-"""
 
-def loops_1a(output):
+def loops_1a():
     our_list = []
     
     for x in range(10):
         our_list.append('*')
     
     return our_list
-    # print (loops_1a("'*'"))
     
     """Make 10 stars.
 
@@ -83,12 +74,6 @@ def star_or_bang(a_number):
     print (result)
     return result
 
-    """x = len(string)
-    if x % 2 == 0:
-        return "!"
-    else:
-        return "*"
-    """    
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -116,14 +101,6 @@ def loops_2():
     return my_return_list
 
 
-    '''my_return_list = []
-
-    for counter in range (10):
-        my_temporary_list = []
-    for counter2 in range (10):
-        my_temporary_list.append('*')
-    return my_return_list.append(my_temporary_list)    
-    '''  
     """
     Make a big square starfield.
 
@@ -164,7 +141,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
+    final_list = []
 
+    for x in range(10):
+        list_number = []
+        for y in range(10):
+            list_number.append(str(x))
+        final_list.append(list_number)
+    return final_list
 
 
 def loops_4():
@@ -184,8 +168,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
-
+    my_return_list4 = []
+    for i in range(10):
+        mylist4 = []
+        for j in range(10):
+            mylist4.append(str(j))
+        my_return_list4.append(mylist4)
+    return my_return_list4
 
 def loops_5():
     my_return_list = []
@@ -240,6 +229,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
+    my_return_list6 = []
+    for i in range(10):
+        list7 = []
+        for u in range(10, i+1):
+            list7.append(str(u))
+        my_return_list6.append(list7)
+    return my_return_list6
     
 
 
