@@ -17,7 +17,7 @@ def greet(name="Towering Timmy"):
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    pass
+    return "Hello " + name
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
@@ -26,7 +26,10 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
-    pass
+    input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]
+    for i in input_list:
+        if i == 3:
+        print (input_list.count(i))
 
 
 def fizz_buzz():
@@ -44,7 +47,15 @@ def fizz_buzz():
     if it is. E.g. [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, ...]
     """
     fizzBuzzList = []
-    # your code here
+    for i in range(1,101):
+        if i % 3 == 0 and i % 5 == 0:
+            fizzBuzzList.append("FizzBuzz")
+        elif i % 5 == 0:
+            fizzBuzzList.append("Buzz")
+        elif i % 3 == 0:
+            fizzBuzzList.append("Fizz")
+        else:
+            fizzBuzzList.append(i)
     return fizzBuzzList
 
 
@@ -57,7 +68,9 @@ def put_behind_bars(input_string="very naughty boy"):
     TIP: conside using the 'join' method in Python.
     TIP: make sure that you have a pipe on both ends of the string.
     """
-    pass
+    s = "|";
+    seq = (' ','v','e','r','y','n','a','u','g','h','t','y','b','o','y',' ')
+    return (s.join( seq ))
 
 
 def pet_filter(letter="a"):
@@ -70,7 +83,73 @@ def pet_filter(letter="a"):
             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
             "canary", "society finch", "fancy mouse", "siamese fighting fish",
             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-    pass
+    for word in pets:
+    first_letter = word.lower()[0]
+    second_letter = word.lower()[1]  
+    third = word.lower()[2]
+    forth = word.lower()[3]
+    fifth = word.lower()[4]
+    sixth = word.lower()[5]
+    seventh = word.lower()[6]
+    eighth = word.lower()[7]
+    ningth = word.lower()[8]
+    tenth = word.lower()[9]
+    eleven = word.lower()[10]
+    twelve = word.lower()[11]
+    thirtheen = word.lower()[12]
+    forteen = word.lower()[13]
+    fiftheen = word.lower()[14]
+    sixteen = word.lower()[15]
+    seventeen = word.lower()[16]
+    eighteen = word.lower()[17]
+    nineteen = word.lower()[18]
+    twenty = word.lower()[19]
+    twenty_one = word.lower()[20]
+
+    if first_letter == "a":
+        print (word)
+    if second_letter == "a":
+        print (word)     
+    if third_letter == "a":
+        print (word)      
+    if forth_letter == "a":
+        print (word)       
+    if fifth_letter == "a":
+        print (word) 
+    if sixth_letter == "a":
+        print (word) 
+    if seventh_letter == "a":
+        print (word) 
+    if eighth_letter == "a":
+        print (word) 
+    if nineth_letter == "a":
+        print (word) 
+    if tenth_letter == "a":
+        print (word) 
+    if eleven == "a":
+        print (word) 
+    if twelve == "a":
+        print (word) 
+    if thirtheen == "a":
+        print (word)
+    if forteen == "a":
+        print (word) 
+    if fiftheen == "a":
+        print (word) 
+    if sixteen == "a":
+        print (word) 
+    if seventeen == "a":
+        print (word) 
+    if eighteen == "a":
+        print (word)
+    if nineteen == "a":
+        print (word) 
+    if twenty == "a":
+        print (word)
+    if twenty == "a":
+        print (word) 
+    return
+
 
 
 def best_letter_for_pets():

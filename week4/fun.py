@@ -1,10 +1,22 @@
-def loops_3():
+import json
+from pprint import pprint
 
-    final_list = []
 
-    for x in range(10):
-        list_number = []
-        for y in range(10):
-            list_number.append('1')
-        final_list.append(list_number)
-    return final_list
+
+#print (data['results'][0]["name"]["last"])
+#print (data['results'][0]["login"]["password"])
+
+
+
+
+def get_some_details():
+
+    data = json.load(open('lazyduck.json'))
+    result = data["results"][0]
+    return {"lastName":       result["name"]["last"],
+            "password":       result["login"]["password"],
+            "postcodePlusID": result["location"]["postcode"] +
+            int(result["id"]["value"])
+            }
+
+print (get_some_details())

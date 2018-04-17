@@ -1,16 +1,7 @@
-import requests
-from bs4 import BeautifulSoup
-url = "https://randomuser.me"
+input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]
+for i in input_list:
+    if i == 3:
+        print (input_list.count(i))
 
-def get_some_details():
-    r = requests.get(url)
-    soup = BeautifulSoup(r.text, "lxml")
-    
-    #lastname
-    #for item in soup.select('#user_value'):
-    #    print(item.text) 
-    for item in soup.select('.active'):
-        print(item.text)
-  
 
-get_some_details()
+

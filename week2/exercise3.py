@@ -147,6 +147,7 @@ def loops_3():
         list_number = []
         for y in range(10):
             list_number.append(str(x))
+            #str(x), notice the x, not y 
         final_list.append(list_number)
     return final_list
 
