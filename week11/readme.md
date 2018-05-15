@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+For this week I tried to look for a dataset that I can base my topic on. At firstI I looked into the youtube algorithm and how they filter trending videos. But I ended up picking a dataset which was about airline safety more specificly, weather or not you should avoid riding airlines that had a crash in the past. 

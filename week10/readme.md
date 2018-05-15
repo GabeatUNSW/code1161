@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+    This week, our group had our machine leanring project graded. We went as far as going to part two of the project and creating an unfunctional if statment where if your wrist was higher than your sholder it hailed for a taxi. I also leanred the real basic idea of what the opendata project is about from Penny. Although I still don't know where to put the data and present it. 
