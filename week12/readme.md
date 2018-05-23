@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+For this week, I finally choose my topic which is weather or not it is safe to ride on a airplane compony which had crashes in the past. I also figured out how to plot data in a really simple way. 
